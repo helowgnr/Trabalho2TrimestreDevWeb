@@ -18,8 +18,11 @@ body {
     margin: 0;
     padding: 0;
 }
+img {
+    border-radius: 5px;
+}
 
-#header {
+header {
     background-color: #141027;
     color: #ffffff;
     display: flex;
@@ -28,15 +31,15 @@ body {
     font-family: var(--font-header);
 }
 
-#header > h1 {
+header > h1 {
     letter-spacing: 1px;
 }
 
-#header > img {
+header > img {
     width: 8%;
 }
 
-#nav {
+nav {
     display: flex;
 }
 
@@ -58,5 +61,16 @@ body {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 20px;
+}
+#esquerda {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    
+
+}
+#esquerda>img{
+    margin-left: 20px
 }
