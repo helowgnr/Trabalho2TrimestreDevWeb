@@ -18,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 img {
     border-radius: 5px;
 }
@@ -31,11 +32,11 @@ header {
     font-family: var(--font-header);
 }
 
-header > h1 {
+header>h1 {
     letter-spacing: 1px;
 }
 
-header > img {
+header>img {
     width: 8%;
 }
 
@@ -49,11 +50,13 @@ nav {
     gap: 50px;
 }
 
-#menu, li {
+#menu,
+li {
     margin-right: 10px;
 }
 
-#menu, a {
+#menu,
+a {
     color: white;
     text-decoration: none;
     list-style: none;
@@ -64,13 +67,32 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 20px;
 }
-#esquerda {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 
-    
+#esquerda>h1 {
+    margin-left: 20px;
 
 }
-#esquerda>img{
+
+
+#esquerda {
+    display: grid;
+    grid-template-rows: 1fr 1 1fr;
+}
+
+#esquerda>img {
     margin-left: 20px
+}
+
+#esquerda>p {
+    width: 50%;
+    margin-left: 20px;
+}
+
+#esquerda>h2 {
+    margin-left: 20px;
+}
+
+#centro>h2 {
+    margin-right: 180px;
+   
 }
